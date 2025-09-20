@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+img{
+    width: 200px;
+    border-radius: 10px;
+    border: 3px;
+    margin: 10px;
+}
+.card{
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.container:hover> :not(:hover){
+    opacity: 0.3;
+}
+.card:hover{
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
